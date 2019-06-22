@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace GradeBook
 {
@@ -6,8 +7,19 @@ namespace GradeBook
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(args.Length);
-            Console.WriteLine($"Hello {args[0]}");
+            var numbers = new[] { 12.7, 10.3, 6.11, 4.1 };
+            var grades = new List<double>();
+
+            // List<double> grades = new List<double>();
+            //requires type argument ex: integers, strings, var, double floating points
+
+            grades.Add(56.1);
+            //Add is a list method
+
+            var result = 0.0;
+            foreach(var number in grades){
+                result += number;
+            }
         }
         //Method name is "Main"
     }
