@@ -6,7 +6,7 @@ namespace GradeBook
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Fuck you!");
+            Console.WriteLine("fuck you");
         }
     }
 }
