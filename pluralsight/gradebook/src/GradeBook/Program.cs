@@ -6,7 +6,8 @@ namespace GradeBook
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("fuck you");
+            Console.WriteLine($"Hello {args[0]}");
         }
+        //Method name is "Main"
     }
 }
