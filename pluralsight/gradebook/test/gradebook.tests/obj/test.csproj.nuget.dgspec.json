@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/test/gradebook.tests/test.csproj": {}
+    "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/test/Gradebook.Tests/test.csproj": {}
   },
   "projects": {
-    "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/test/gradebook.tests/test.csproj": {
+    "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/src/GradeBook/GradeBook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/test/gradebook.tests/test.csproj",
-        "projectName": "test",
-        "projectPath": "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/test/gradebook.tests/test.csproj",
+        "projectUniqueName": "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/src/GradeBook/GradeBook.csproj",
+        "projectName": "GradeBook",
+        "projectPath": "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/src/GradeBook/GradeBook.csproj",
         "packagesPath": "/Users/abhiktiwari/.nuget/packages/",
-        "outputPath": "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/test/gradebook.tests/obj/",
+        "outputPath": "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/src/GradeBook/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -28,6 +28,60 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/test/Gradebook.Tests/test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/test/Gradebook.Tests/test.csproj",
+        "projectName": "test",
+        "projectPath": "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/test/Gradebook.Tests/test.csproj",
+        "packagesPath": "/Users/abhiktiwari/.nuget/packages/",
+        "outputPath": "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/test/Gradebook.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/abhiktiwari/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/src/GradeBook/GradeBook.csproj": {
+                "projectPath": "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/src/GradeBook/GradeBook.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
