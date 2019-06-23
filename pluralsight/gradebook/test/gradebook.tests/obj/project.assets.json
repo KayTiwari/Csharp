@@ -5864,11 +5864,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/test/test.csproj",
+      "projectUniqueName": "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/test/gradebook.tests/test.csproj",
       "projectName": "test",
-      "projectPath": "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/test/test.csproj",
+      "projectPath": "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/test/gradebook.tests/test.csproj",
       "packagesPath": "/Users/abhiktiwari/.nuget/packages/",
-      "outputPath": "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/test/obj/",
+      "outputPath": "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/test/gradebook.tests/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
