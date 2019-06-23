@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/test/Gradebook.Tests/test.csproj": {}
+    "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/test/GradeBook.Tests/GradeBook.Tests.csproj": {}
   },
   "projects": {
     "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/src/GradeBook/GradeBook.csproj": {
@@ -54,14 +54,14 @@
         }
       }
     },
-    "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/test/Gradebook.Tests/test.csproj": {
+    "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/test/GradeBook.Tests/GradeBook.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/test/Gradebook.Tests/test.csproj",
-        "projectName": "test",
-        "projectPath": "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/test/Gradebook.Tests/test.csproj",
+        "projectUniqueName": "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/test/GradeBook.Tests/GradeBook.Tests.csproj",
+        "projectName": "GradeBook.Tests",
+        "projectPath": "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/test/GradeBook.Tests/GradeBook.Tests.csproj",
         "packagesPath": "/Users/abhiktiwari/.nuget/packages/",
-        "outputPath": "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/test/Gradebook.Tests/obj/",
+        "outputPath": "/Users/abhiktiwari/dev/langlearning/c#/pluralsight/gradebook/test/GradeBook.Tests/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -105,7 +105,7 @@
             },
             "xunit": {
               "target": "Package",
-              "version": "[2.4.0, )"
+              "version": "[2.4.1, )"
             },
             "xunit.runner.visualstudio": {
               "target": "Package",

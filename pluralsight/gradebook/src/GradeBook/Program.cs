@@ -10,7 +10,7 @@ namespace GradeBook
             var book = new Book("Gradebook");
             book.AddGrade(89.1);
             book.AddGrade(90.5);
-            book.ShowStatistics();
+            book.GetStatistics();
 
             // book.grades.Add(52);
 
@@ -37,9 +37,9 @@ namespace GradeBook
                 result += number;
             }
             var final = result/grades.Count;
-            Console.WriteLine(final);
-            Console.WriteLine(highgrade);
-            Console.WriteLine(lowgrade);
+            // Console.WriteLine(final);
+            // Console.WriteLine(highgrade);
+            // Console.WriteLine(lowgrade);
         }
         //Method name is "Main"
     }
