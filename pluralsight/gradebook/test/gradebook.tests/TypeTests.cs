@@ -7,6 +7,57 @@ namespace GradeBook.Tests
     public class TypeTests
     {
         [Fact]
+        public void Test1()
+        {
+            var x = GetInt();
+            SetInt(ref x);
+            //have to put ref in both places
+
+            Assert.Equal(42, x);
+
+        }
+
+        private void SetInt(ref int x)
+        {
+            x = 42;
+        }
+
+        private int GetInt()
+        {
+            return 3;
+        }
+
+        [Fact]
+        public void Csharpispassbyvalue()
+        {
+            var book1 = GetBook("Book 1");
+            GetBookSetName(ref book1, "New Name");
+            //Sending a COPY of book1 to the getbooksetname method
+
+            Assert.Equal("New Name", book1.Name);
+        }
+
+        private void GetBookSetName(ref Book book, string name)
+        //ref keyword passess book1 as a reference instead of a value
+        {
+            book = new Book(name);
+        }
+
+        [Fact]
+        public void CanSetNameFromReference()
+        {
+            var book1 = GetBook("Book 1");
+            setName(book1, "New Name");
+
+            Assert.Equal("New Name", book1.Name);
+        }
+
+        private void setName(Book book1, string name)
+        {
+            book1.Name = name;
+        }
+
+        [Fact]
         public void GetBookReturnsDifferentObjects()
         {
             var book1 = GetBook("Book 1");
