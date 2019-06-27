@@ -42,3 +42,9 @@ if(condition){
 done: do this
 
 
+
+Switch statements require break in cases
+
+
+
+
