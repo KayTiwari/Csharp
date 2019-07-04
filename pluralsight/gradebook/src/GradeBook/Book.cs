@@ -79,7 +79,20 @@ namespace GradeBook
         }
 
         private List<double> grades;
-        public string Name;
+
+        public string Name {
+            get{
+                return name;
+            }
+            set{
+                if (!String.IsNullOrEmpty(value)){
+                name = value;
+                }
+                //value is an implicit variable
+            }
+
+        }
+        private string name;
     }
 }
 
