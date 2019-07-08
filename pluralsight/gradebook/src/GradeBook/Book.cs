@@ -8,6 +8,7 @@ namespace GradeBook
     {
         //constructor method
         public Book(string name){
+            const int x = 3;
             Name = name;
             grades = new List <double>();
         }
@@ -81,18 +82,13 @@ namespace GradeBook
         private List<double> grades;
 
         public string Name {
-            get{
-                return name;
-            }
-            set{
-                if (!String.IsNullOrEmpty(value)){
-                name = value;
-                }
-                //value is an implicit variable
-            }
-
+            get; private set;
+            //read only
+            //auto property
+            //equivalent to setting public string Name;
         }
-        private string name;
+
+        public const string CATEGORY = "Science";
     }
 }
 
