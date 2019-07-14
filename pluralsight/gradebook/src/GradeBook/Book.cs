@@ -3,6 +3,8 @@ using System.Collections.Generic;
 
 namespace GradeBook
 {
+    public delegate void GradeAddedDelegate(object sender, EventArgs args);
+
     public class Book
     //need to specify public otherwise it will default to "internal"
     {
@@ -36,9 +38,15 @@ namespace GradeBook
         public void AddGrade(double number){
             if (number <= 100 && number >= 0){
             grades.Add(number);
+            if (GradeAdded != null){
+                GradeAdded(this, new EventArgs());
+                //this keyword is the object being sent
+            }
             }
             else Console.WriteLine("Invalid Value");
         }
+
+        public event GradeAddedDelegate GradeAdded;
 
         public Statistics GetStatistics()
         {
@@ -82,7 +90,7 @@ namespace GradeBook
         private List<double> grades;
 
         public string Name {
-            get; private set;
+            get; set;
             //read only
             //auto property
             //equivalent to setting public string Name;

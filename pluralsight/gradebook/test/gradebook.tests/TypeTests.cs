@@ -4,8 +4,39 @@ using Xunit;
 
 namespace GradeBook.Tests
 {
+    public delegate string WriteLogDelegate(string logMessage);
     public class TypeTests
     {
+        int count = 0;
+        [Fact]
+        public void WriteLogDelegateCanPointToMethod()
+        {
+            WriteLogDelegate log = returnMessage;
+            //created WriteLogDelegate delegate
+            log += returnMessage;
+            log += incrementCount;
+            //multicasting delegates to run multiple functions
+
+            //logs initialized to point to this method
+            var result = log("Hello");
+            //log is then invoked to return a string
+            // Assert.Equal("Hello", result);
+            Assert.Equal(3, count);
+
+            //Essentially log() is a keyword for returnMessage() and both invoke the same function
+        }
+
+        private string returnMessage(string message)
+        {
+            count++;
+            return message;
+        }
+        private string incrementCount(string message)
+        {
+            count++;
+            return message;
+        }
+
         [Fact]
          public void StringsBehaveLikeValues()
         {
