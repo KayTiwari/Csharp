@@ -5,11 +5,25 @@ namespace GradeBook
 {
     public delegate void GradeAddedDelegate(object sender, EventArgs args);
 
-    public class Book
+    public class NamedObject
+    {
+        public NamedObject(string name)
+        {
+            Name = name;
+        }
+
+        public string Name{
+            get; set;
+        }
+    }
+    //using a colon to specify derived:base
+    //Book is a named object
+    public class Book : NamedObject
     //need to specify public otherwise it will default to "internal"
     {
         //constructor method
-        public Book(string name){
+        public Book(string name) : base(name)
+        {
             const int x = 3;
             Name = name;
             grades = new List <double>();
