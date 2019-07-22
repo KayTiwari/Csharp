@@ -18,16 +18,35 @@ namespace GradeBook
     }
     //using a colon to specify derived:base
     //Book is a named object
-    public class Book : NamedObject
+
+    public interface IBook
+    {
+        void AddGrade(double grade);
+
+        Statistics GetStatistics();
+        String Name {get;}
+        event GradeAddedDelegate GradeAdded;
+    }
+
+     public abstract class Book : NamedObject
+        {
+            public Book(string name) : base (name)
+            {
+
+            }
+            public abstract void AddGrade(double grade);
+        }
+    public class InMemoryBook : Book, IBook
     //need to specify public otherwise it will default to "internal"
     {
         //constructor method
-        public Book(string name) : base(name)
+        public InMemoryBook(string name) : base(name)
         {
             const int x = 3;
             Name = name;
             grades = new List <double>();
         }
+
 
         public void AddLetterGrade(char letter)
         {
@@ -49,7 +68,7 @@ namespace GradeBook
                     break;
             }
         }
-        public void AddGrade(double number){
+        public  override void AddGrade(double number){
             if (number <= 100 && number >= 0){
             grades.Add(number);
             if (GradeAdded != null){
